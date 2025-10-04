@@ -37,7 +37,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative h-screen w-full bg-background overflow-hidden">
+    <section ref={heroRef} className="hero-section relative h-screen w-full bg-background overflow-hidden">
       <video
         ref={videoRef}
         autoPlay

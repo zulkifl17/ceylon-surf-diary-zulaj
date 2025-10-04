@@ -41,39 +41,43 @@ export default function FloatingImages() {
     if (!containerRef.current || !image1Ref.current || !image2Ref.current || !image3Ref.current) return;
 
     const images = [image1Ref.current, image2Ref.current, image3Ref.current];
+    const heroHeight = window.innerHeight;
+    const finalRowY = heroHeight - 250;
 
     // ScrollTrigger to move images down and lock them into a row
     ScrollTrigger.create({
-      trigger: containerRef.current,
-      start: 'top bottom',
-      end: 'bottom top',
+      trigger: '.hero-section',
+      start: 'top top',
+      end: 'bottom center',
       scrub: 1,
       onUpdate: (self) => {
         const progress = self.progress;
 
-        if (progress < 0.6) {
+        if (progress < 0.5) {
           setIsLocked(false);
 
-          // Move images toward center row position
-          const spacing = 200;
+          // Move images toward final row position
+          const spacing = 280;
           images.forEach((img, index) => {
             const finalX = (index - 1) * spacing;
             gsap.to(img, {
-              x: finalX * (progress / 0.6),
-              y: (window.innerHeight * 0.5) * (progress / 0.6),
+              x: finalX * (progress / 0.5),
+              y: finalRowY * (progress / 0.5),
+              scale: 1 + (0.5 * (progress / 0.5)),
               duration: 0,
             });
           });
         } else {
           setIsLocked(true);
 
-          // Lock into final row position
-          const spacing = 200;
+          // Lock into final row position - below SCROLL text
+          const spacing = 280;
           images.forEach((img, index) => {
             const finalX = (index - 1) * spacing;
             gsap.to(img, {
               x: finalX,
-              y: window.innerHeight * 0.5,
+              y: finalRowY,
+              scale: 1.5,
               duration: 0,
             });
           });
@@ -105,7 +109,7 @@ export default function FloatingImages() {
   };
 
   return (
-    <section ref={containerRef} className="relative h-[100vh] w-full pointer-events-none">
+    <section ref={containerRef} className="relative h-[50vh] w-full pointer-events-none">
       <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center pointer-events-none z-30">
         {[0, 1, 2].map((index) => {
           const initialPositions = [
