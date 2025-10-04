@@ -121,14 +121,14 @@ export default function SurfStories() {
 
   return (
     <section ref={sectionRef} className="bg-background">
-      <div className="py-20 px-8 bg-primary-text text-background">
+      <div className="py-20 px-8 bg-background text-primary-text">
         <h2
-          className="text-6xl md:text-8xl font-bold tracking-tight text-background"
+          className="text-6xl md:text-8xl font-bold tracking-tight text-primary-text"
           style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}
         >
           SURF STORIES
         </h2>
-        <p className="text-xl mt-4 tracking-wider opacity-80 text-background">Moments frozen in time</p>
+        <p className="text-xl mt-4 tracking-wider opacity-80 text-primary-text">Moments frozen in time</p>
       </div>
 
       {stories.map((story, index) => (
