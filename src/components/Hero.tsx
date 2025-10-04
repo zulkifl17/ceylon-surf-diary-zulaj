@@ -61,9 +61,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="max-w-2xl text-center mb-12 px-6"
+          className="max-w-3xl text-center mb-12 px-6"
         >
-          <p className="text-base md:text-lg leading-relaxed" style={{ color: '#121212' }}>
+          <p className="text-base md:text-lg leading-relaxed font-josefin" style={{ color: '#121212' }}>
             Through the lens, I chase the energy of the ocean — capturing surfers dancing with waves, sunlight glistening on water, and the raw spirit of adventure. Every photograph tells a story of freedom, motion, and the endless horizon.
           </p>
         </motion.div>

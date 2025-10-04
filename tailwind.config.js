@@ -9,6 +9,7 @@ export default {
       },
       fontFamily: {
         tangerine: ['Tangerine', 'cursive'],
+        josefin: ['Josefin Sans', 'sans-serif'],
       },
     },
   },
