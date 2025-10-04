@@ -25,12 +25,60 @@ This documentation serves as a comprehensive guide to the Ceylon Surf Diary proj
 #### For Updating Documentation
 After completing or modifying a component:
 1. Update the status of the component from "Pending" to "Done".
-2. Add any relevant implementation details that might differ from the original plan.
-3. If you've made significant changes to an existing component, add a note in the "Change Log" section for that component.
+2. Mark the corresponding checkbox in the Project To-Do List by replacing `[ ]` with `[x]` for the completed section.
+3. When all sections of a page are complete, mark the page-level checkbox as complete too.
+4. Add any relevant implementation details that might differ from the original plan.
+5. If you've made significant changes to an existing component, add a note in the "Change Log" section for that component.
 
 ---
 
 ## 📋 Project Overview
+
+### Project To-Do List
+
+This section tracks the implementation progress of all pages and sections. Mark items with [x] when completed.
+
+- [ ] **Home Page**
+  - [x] Hero Section
+  - [x] About Section
+  - [x] Horizontal Gallery
+  - [x] Surf Stories
+  - [x] Immersive Section
+  - [x] Contact Section
+  - [ ] Testimonials
+
+- [ ] **Gallery Page**
+  - [ ] Gallery Grid
+  - [ ] Category Filters
+
+- [ ] **Services & Pricing Page**
+  - [ ] Pricing Packages
+  - [ ] Add-ons Section
+  - [ ] Booking Call-to-Action
+
+- [ ] **Our Story Page**
+  - [ ] Bio Section
+  - [ ] Philosophy/Mission
+
+- [ ] **Booking / Contact Page**
+  - [ ] Booking Form
+  - [ ] Contact Information
+  - [ ] Location Map
+
+- [ ] **Blog / Surf Diary Page**
+  - [ ] Blog Post Grid
+  - [ ] Individual Blog Post Template
+  - [ ] Categories/Tags
+
+- [ ] **Testimonials Page**
+  - [ ] Testimonial Grid/Slider
+  - [ ] Submission Form (Optional)
+
+- [ ] **Project Restructuring**
+  - [ ] Create Pages Directory
+  - [ ] Implement Routing
+  - [ ] Refactor Components
+  - [ ] Update Navigation
 
 ### Technology Stack
 - **Frontend Framework:** React with TypeScript
@@ -451,7 +499,7 @@ After completing or modifying a component:
 
 ---
 
-### 🔸 Submission Form (Optional)
+### 🔸 Submission Form 
 
 **Design:**
 - **Layout:** A simple form allowing clients to submit their testimonials.
