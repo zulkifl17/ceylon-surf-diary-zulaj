@@ -87,12 +87,12 @@ export default function HorizontalGallery() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-black overflow-hidden">
+    <section ref={sectionRef} className="relative bg-[#3B3B3B] overflow-hidden">
       <div className="py-20 px-8">
-        <h2 className="text-white text-6xl md:text-8xl font-bold mb-4 tracking-tight" style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}>
+        <h2 className="text-[#F7F7F5] text-6xl md:text-8xl font-bold mb-4 tracking-tight" style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}>
           PORTFOLIO
         </h2>
-        <p className="text-white text-xl mb-12 tracking-wider opacity-80">Scroll to explore →</p>
+        <p className="text-[#F7F7F5] text-xl mb-12 tracking-wider opacity-80">Scroll to explore →</p>
       </div>
 
       <div ref={trackRef} className="flex gap-8 px-8 pb-20" style={{ width: 'max-content' }}>
@@ -115,7 +115,7 @@ export default function HorizontalGallery() {
               }}
             />
             {hoveredId === image.id && (
-              <div className="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-[#3B3B3B] bg-opacity-20 transition-opacity duration-300" />
             )}
           </div>
         ))}

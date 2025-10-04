@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import HorizontalGallery from './components/HorizontalGallery';
@@ -7,7 +8,8 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-[#F7F7F5]">
+      <Navbar />
       <Hero />
       <About />
       <HorizontalGallery />

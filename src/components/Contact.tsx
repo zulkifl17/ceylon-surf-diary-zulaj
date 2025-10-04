@@ -79,7 +79,7 @@ export default function Contact() {
             <div ref={formRef}>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="form-input">
-                  <label htmlFor="name" className="block text-sm font-bold uppercase tracking-wider mb-2">
+                  <label htmlFor="name" className="block text-sm font-bold uppercase tracking-wider mb-2 text-[#3B3B3B]">
                     Name
                   </label>
                   <input
@@ -89,12 +89,12 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border-2 border-black bg-white text-black focus:outline-none focus:ring-2 focus:ring-black transition-all"
+                    className="w-full px-6 py-4 border-2 border-[#3B3B3B] bg-[#F7F7F5] text-[#3B3B3B] focus:outline-none focus:ring-2 focus:ring-[#3B3B3B] transition-all"
                   />
                 </div>
 
                 <div className="form-input">
-                  <label htmlFor="email" className="block text-sm font-bold uppercase tracking-wider mb-2">
+                  <label htmlFor="email" className="block text-sm font-bold uppercase tracking-wider mb-2 text-[#3B3B3B]">
                     Email
                   </label>
                   <input
@@ -104,12 +104,12 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border-2 border-black bg-white text-black focus:outline-none focus:ring-2 focus:ring-black transition-all"
+                    className="w-full px-6 py-4 border-2 border-[#3B3B3B] bg-[#F7F7F5] text-[#3B3B3B] focus:outline-none focus:ring-2 focus:ring-[#3B3B3B] transition-all"
                   />
                 </div>
 
                 <div className="form-input">
-                  <label htmlFor="message" className="block text-sm font-bold uppercase tracking-wider mb-2">
+                  <label htmlFor="message" className="block text-sm font-bold uppercase tracking-wider mb-2 text-[#3B3B3B]">
                     Message
                   </label>
                   <textarea
@@ -119,7 +119,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-6 py-4 border-2 border-black bg-white text-black focus:outline-none focus:ring-2 focus:ring-black transition-all resize-none"
+                    className="w-full px-6 py-4 border-2 border-[#3B3B3B] bg-[#F7F7F5] text-[#3B3B3B] focus:outline-none focus:ring-2 focus:ring-[#3B3B3B] transition-all resize-none"
                   />
                 </div>
 

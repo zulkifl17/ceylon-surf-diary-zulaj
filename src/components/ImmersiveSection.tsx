@@ -49,7 +49,7 @@ export default function ImmersiveSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-black">
+    <section ref={sectionRef} className="relative bg-[#3B3B3B]">
       <div ref={contentRef} className="h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <img

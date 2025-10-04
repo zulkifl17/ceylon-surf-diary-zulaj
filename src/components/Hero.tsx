@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ChevronDown } from 'lucide-react';
@@ -55,7 +56,18 @@ export default function Hero() {
         <h1 className="font-bold text-6xl md:text-8xl lg:text-9xl text-center mb-8 tracking-tight" style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}>
           SURF THROUGH<br />MY LENS
         </h1>
-        <p className="text-xl md:text-2xl mb-12 tracking-widest">WELIGAMA</p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="max-w-2xl text-center mb-12 px-6"
+        >
+          <p className="text-base md:text-lg leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+            Through the lens, I chase the energy of the ocean — capturing surfers dancing with waves, sunlight glistening on water, and the raw spirit of adventure. Every photograph tells a story of freedom, motion, and the endless horizon.
+          </p>
+        </motion.div>
+
         <button className="border-2 border-white px-12 py-4 text-lg font-bold tracking-wider hover:bg-white hover:text-black transition-all duration-300">
           VIEW PORTFOLIO
         </button>
