@@ -7,6 +7,9 @@ export default {
         'background': '#F7F7F5',
         'primary-text': '#121212',
       },
+      fontFamily: {
+        tangerine: ['Tangerine', 'cursive'],
+      },
     },
   },
   plugins: [],

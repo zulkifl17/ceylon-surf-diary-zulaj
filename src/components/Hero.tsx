@@ -53,8 +53,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-background bg-opacity-30" />
 
       <div ref={textRef} className="relative h-full flex flex-col items-center justify-center text-primary-text px-4">
-        <h1 className="font-bold text-6xl md:text-8xl lg:text-9xl text-center mb-8 tracking-tight" style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}>
-          SURF THROUGH<br />MY LENS
+        <h1 className="font-tangerine text-8xl md:text-9xl lg:text-[6rem] text-center mb-8">
+          Surf Through<br />My Lens
         </h1>
 
         <motion.div
