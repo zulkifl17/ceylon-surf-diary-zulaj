@@ -49,7 +49,7 @@ export default function ImmersiveSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-[#3B3B3B]">
+    <section ref={sectionRef} className="relative bg-primary-text">
       <div ref={contentRef} className="h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -61,7 +61,7 @@ export default function ImmersiveSection() {
           <div className="absolute inset-0 bg-black bg-opacity-50" />
         </div>
 
-        <div className="relative h-full flex items-center justify-center text-white">
+        <div className="relative h-full flex items-center justify-center text-background">
           <div
             ref={text1Ref}
             className="absolute text-center px-4"

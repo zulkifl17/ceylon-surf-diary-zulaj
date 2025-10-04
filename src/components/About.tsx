@@ -25,7 +25,7 @@ export default function About() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-screen bg-[#F7F7F5] flex items-center">
+    <section ref={sectionRef} className="min-h-screen bg-background flex items-center">
       <div className="container mx-auto px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           <div
@@ -44,15 +44,15 @@ export default function About() {
             />
           </div>
 
-          <div ref={textRef} className="flex items-center justify-center p-8 lg:p-16 bg-[#3B3B3B] text-[#F7F7F5]">
+          <div ref={textRef} className="flex items-center justify-center p-8 lg:p-16 bg-primary-text text-background">
             <div className="max-w-xl">
-              <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-[#F7F7F5]" style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}>
+              <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-background" style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}>
                 CAPTURING<br />THE SOUL<br />OF WELIGAMA
               </h2>
-              <p className="text-lg md:text-xl leading-relaxed mb-6 text-[#F7F7F5]">
+              <p className="text-lg md:text-xl leading-relaxed mb-6 text-background">
                 I capture the raw power of the ocean and the soul of Weligama's surf culture.
               </p>
-              <p className="text-base md:text-lg leading-relaxed opacity-80 text-[#F7F7F5]">
+              <p className="text-base md:text-lg leading-relaxed opacity-80 text-background">
                 Every wave tells a story. Every surfer carries a dream. Through my lens,
                 I freeze moments where courage meets nature, where passion rides the tide,
                 and where Weligama's spirit comes alive in black and white.

@@ -93,21 +93,21 @@ function StoryCard({ story, index }: { story: SurfStory; index: number }) {
       </div>
 
       <div
-        className={`flex items-center justify-center p-8 lg:p-16 bg-[#F7F7F5] ${
+        className={`flex items-center justify-center p-8 lg:p-16 bg-background ${
           isReverse ? 'lg:order-1' : ''
         }`}
       >
         <div className="max-w-xl">
           <h3
-            className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#3B3B3B]"
+            className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-primary-text"
             style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}
           >
             {story.title}
           </h3>
-          <p className="text-lg md:text-xl leading-relaxed mb-6 text-[#3B3B3B] opacity-80">
+          <p className="text-lg md:text-xl leading-relaxed mb-6 text-primary-text opacity-80">
             {story.description}
           </p>
-          <p className="text-sm md:text-base uppercase tracking-widest text-[#3B3B3B] opacity-60">
+          <p className="text-sm md:text-base uppercase tracking-widest text-primary-text opacity-60">
             {story.location}
           </p>
         </div>
@@ -120,15 +120,15 @@ export default function SurfStories() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section ref={sectionRef} className="bg-[#F7F7F5]">
-      <div className="py-20 px-8 bg-[#3B3B3B] text-[#F7F7F5]">
+    <section ref={sectionRef} className="bg-background">
+      <div className="py-20 px-8 bg-primary-text text-background">
         <h2
-          className="text-6xl md:text-8xl font-bold tracking-tight text-[#F7F7F5]"
+          className="text-6xl md:text-8xl font-bold tracking-tight text-background"
           style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}
         >
           SURF STORIES
         </h2>
-        <p className="text-xl mt-4 tracking-wider opacity-80 text-[#F7F7F5]">Moments frozen in time</p>
+        <p className="text-xl mt-4 tracking-wider opacity-80 text-background">Moments frozen in time</p>
       </div>
 
       {stories.map((story, index) => (

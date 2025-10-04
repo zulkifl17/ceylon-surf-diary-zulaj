@@ -51,7 +51,7 @@ export default function Navbar() {
       {/* Floating Menu Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed top-8 right-8 z-40 bg-[#F7F7F5] p-4 hover:bg-[#3B3B3B] hover:text-[#F7F7F5] transition-colors duration-300"
+        className="fixed top-8 right-8 z-40 bg-background p-4 hover:bg-primary-text hover:text-background transition-colors duration-300"
         aria-label="Open menu"
       >
         <Menu className="w-6 h-6" />
@@ -65,12 +65,12 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed inset-0 bg-[#F7F7F5] z-50 flex flex-col items-center justify-center"
+            className="fixed inset-0 bg-background z-50 flex flex-col items-center justify-center"
           >
             {/* Close Button */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-8 right-8 bg-transparent p-4 hover:bg-[#3B3B3B] hover:text-[#F7F7F5] transition-colors duration-300"
+              className="absolute top-8 right-8 bg-transparent p-4 hover:bg-primary-text hover:text-background transition-colors duration-300"
               aria-label="Close menu"
             >
               <X className="w-6 h-6" />
@@ -85,7 +85,7 @@ export default function Navbar() {
                   custom={index}
                   variants={itemVariants}
                   onClick={() => setIsOpen(false)}
-                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-[#3B3B3B] hover:opacity-60 transition-opacity duration-300 ${
+                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-primary-text hover:opacity-60 transition-opacity duration-300 ${
                     item.active ? 'underline underline-offset-8' : ''
                   }`}
                   style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.05em' }}

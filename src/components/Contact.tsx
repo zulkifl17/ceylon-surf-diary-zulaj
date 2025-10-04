@@ -62,11 +62,11 @@ export default function Contact() {
   };
 
   return (
-    <section ref={sectionRef} className="bg-white py-20">
+    <section ref={sectionRef} className="bg-background py-20">
       <div className="container mx-auto px-8 lg:px-16">
         <div className="max-w-4xl mx-auto">
           <h2
-            className="text-6xl md:text-8xl font-bold mb-8 text-black tracking-tight"
+            className="text-6xl md:text-8xl font-bold mb-8 text-primary-text tracking-tight"
             style={{ fontFamily: 'Bebas Neue, Oswald, sans-serif', letterSpacing: '0.05em' }}
           >
             GET IN TOUCH
@@ -79,7 +79,7 @@ export default function Contact() {
             <div ref={formRef}>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="form-input">
-                  <label htmlFor="name" className="block text-sm font-bold uppercase tracking-wider mb-2 text-[#3B3B3B]">
+                  <label htmlFor="name" className="block text-sm font-bold uppercase tracking-wider mb-2 text-primary-text">
                     Name
                   </label>
                   <input
@@ -89,12 +89,12 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border-2 border-[#3B3B3B] bg-[#F7F7F5] text-[#3B3B3B] focus:outline-none focus:ring-2 focus:ring-[#3B3B3B] transition-all"
+                    className="w-full px-6 py-4 border-2 border-primary-text bg-background text-primary-text focus:outline-none focus:ring-2 focus:ring-primary-text transition-all"
                   />
                 </div>
 
                 <div className="form-input">
-                  <label htmlFor="email" className="block text-sm font-bold uppercase tracking-wider mb-2 text-[#3B3B3B]">
+                  <label htmlFor="email" className="block text-sm font-bold uppercase tracking-wider mb-2 text-primary-text">
                     Email
                   </label>
                   <input
@@ -104,12 +104,12 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 border-2 border-[#3B3B3B] bg-[#F7F7F5] text-[#3B3B3B] focus:outline-none focus:ring-2 focus:ring-[#3B3B3B] transition-all"
+                    className="w-full px-6 py-4 border-2 border-primary-text bg-background text-primary-text focus:outline-none focus:ring-2 focus:ring-primary-text transition-all"
                   />
                 </div>
 
                 <div className="form-input">
-                  <label htmlFor="message" className="block text-sm font-bold uppercase tracking-wider mb-2 text-[#3B3B3B]">
+                  <label htmlFor="message" className="block text-sm font-bold uppercase tracking-wider mb-2 text-primary-text">
                     Message
                   </label>
                   <textarea
@@ -119,20 +119,20 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-6 py-4 border-2 border-[#3B3B3B] bg-[#F7F7F5] text-[#3B3B3B] focus:outline-none focus:ring-2 focus:ring-[#3B3B3B] transition-all resize-none"
+                    className="w-full px-6 py-4 border-2 border-primary-text bg-background text-primary-text focus:outline-none focus:ring-2 focus:ring-primary-text transition-all resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-black text-white py-4 px-8 font-bold uppercase tracking-wider hover:bg-gray-800 transition-all disabled:opacity-50"
+                  className="w-full bg-primary-text text-background py-4 px-8 font-bold uppercase tracking-wider hover:bg-gray-800 transition-all disabled:opacity-50"
                 >
                   {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
                 </button>
 
                 {submitMessage && (
-                  <p className="text-center text-black font-medium">{submitMessage}</p>
+                  <p className="text-center text-primary-text font-medium">{submitMessage}</p>
                 )}
               </form>
             </div>
@@ -192,7 +192,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <footer className="bg-black text-white py-12 mt-20">
+      <footer className="bg-primary-text text-background py-12 mt-20">
         <div className="container mx-auto px-8 text-center">
           <h4
             className="text-4xl md:text-5xl font-bold mb-4 tracking-tight"
