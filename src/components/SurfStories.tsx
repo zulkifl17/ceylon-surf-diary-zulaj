@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const stories: SurfStory[] = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/848618/pexels-photo-848618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'images/lifestyle (7).jpg',
     colorImage: 'https://images.pexels.com/photos/848618/pexels-photo-848618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'DAWN PATROL',
     description: 'The first light breaks over Weligama Bay. A lone surfer paddles out, chasing the perfect wave before the crowds arrive.',
@@ -16,15 +16,15 @@ const stories: SurfStory[] = [
   },
   {
     id: 2,
-    image: 'https://images.pexels.com/photos/1654487/pexels-photo-1654487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    colorImage: 'https://images.pexels.com/photos/1654487/pexels-photo-1654487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'images/surfing (10).jpg',
+    colorImage: 'images/surfing (10).jpg',
     title: 'INSIDE THE BARREL',
     description: 'Time stands still. The roar of the ocean becomes a whisper. This is where fear transforms into pure flow.',
     location: 'Mirissa Point, High Tide',
   },
   {
     id: 3,
-    image: 'https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'images/lifestyle (12).jpg',
     colorImage: 'https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'THE GROM',
     description: 'Young blood, old soul. At twelve years old, he rides with the confidence of a veteran. The future of Sri Lankan surfing.',
@@ -32,7 +32,7 @@ const stories: SurfStory[] = [
   },
   {
     id: 4,
-    image: 'https://images.pexels.com/photos/1654489/pexels-photo-1654489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'images/lifestyle (8).jpg',
     colorImage: 'https://images.pexels.com/photos/1654489/pexels-photo-1654489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'AFTER THE STORM',
     description: 'The monsoon passed. The ocean delivered. These are the waves we wait for all season long.',
@@ -70,32 +70,28 @@ function StoryCard({ story, index }: { story: SurfStory; index: number }) {
   return (
     <div
       ref={cardRef}
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-screen items-center ${
-        isReverse ? 'lg:direction-rtl' : ''
-      }`}
+      className={`grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-screen items-center ${ isReverse ? 'lg:direction-rtl' : ''
+        }`}
       style={{ opacity: 1 }}
     >
       <div
-        className={`relative h-[50vh] lg:h-screen overflow-hidden cursor-pointer ${
-          isReverse ? 'lg:order-2' : ''
-        }`}
+        className={`relative h-[50vh] lg:h-screen overflow-hidden cursor-pointer ${ isReverse ? 'lg:order-2' : ''
+          }`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
           src={story.image}
           alt={story.title}
-          className={`w-full h-full object-cover transition-all duration-700 ${
-            isHovered ? 'scale-110' : 'scale-100'
-          }`}
+          className={`w-full h-full object-cover transition-all duration-700 ${ isHovered ? 'scale-110' : 'scale-100'
+            }`}
           style={{ filter: isHovered ? 'grayscale(0%)' : 'grayscale(100%)' }}
         />
       </div>
 
       <div
-        className={`flex items-center justify-center p-8 lg:p-16 bg-background ${
-          isReverse ? 'lg:order-1' : ''
-        }`}
+        className={`flex items-center justify-center p-8 lg:p-16 bg-background ${ isReverse ? 'lg:order-1' : ''
+          }`}
       >
         <div className="max-w-xl">
           <h3

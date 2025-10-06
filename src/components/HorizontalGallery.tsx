@@ -106,7 +106,7 @@ export default function HorizontalGallery() {
           <div
             key={image.id}
             className="relative overflow-hidden cursor-pointer"
-            style={{ width: 'auto', height: '450px' }}
+            style={{ width: '350px', height: '450px' }}
             onMouseEnter={() => setHoveredId(image.id)}
             onMouseLeave={() => setHoveredId(null)}
           >

@@ -35,11 +35,10 @@ export default function About() {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src="https://images.pexels.com/photos/3618162/pexels-photo-3618162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="images/lifestyle (11).jpg"
               alt="Surf Photographer"
-              className={`w-full h-full object-cover transition-all duration-700 ${
-                isHovered ? 'scale-110' : 'scale-100'
-              }`}
+              className={`w-full h-full object-cover transition-all duration-700 ${ isHovered ? 'scale-110' : 'scale-100'
+                }`}
               style={{ filter: isHovered ? 'grayscale(0%)' : 'grayscale(100%)' }}
             />
           </div>
