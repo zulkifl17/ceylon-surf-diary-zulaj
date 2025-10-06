@@ -8,7 +8,7 @@ export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(true);
 
   useEffect(() => {
     if (!sectionRef.current || !textRef.current) return;
@@ -31,8 +31,8 @@ export default function About() {
           <div
             ref={imageRef}
             className="relative h-[60vh] lg:h-screen lg:sticky lg:top-0 overflow-hidden cursor-pointer"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+          // onMouseEnter={() => setIsHovered(true)}
+          // onMouseLeave={() => setIsHovered(false)}
           >
             <img
               src="images/lifestyle (11).jpg"

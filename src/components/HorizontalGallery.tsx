@@ -13,49 +13,49 @@ const images: PortfolioImage[] = [
     alt: 'Surfer at sunset',
   },
   {
-    id: 2,
+    id: 1,
     src: 'images/surfing (6).jpg',
     colorSrc: 'https://images.pexels.com/photos/1654487/pexels-photo-1654487.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Wave barrel',
   },
   {
-    id: 3,
+    id: 1,
     src: 'images/lifestyle (5).jpg',
     colorSrc: 'https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Surfer riding wave',
   },
   {
-    id: 4,
+    id: 1,
     src: 'images/surfing (3).jpg',
     colorSrc: 'https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Ocean wave',
   },
   {
-    id: 5,
+    id: 1,
     src: 'images/beach (1).jpg',
     colorSrc: 'https://images.pexels.com/photos/2889440/pexels-photo-2889440.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Surfer in action',
   },
   {
-    id: 6,
+    id: 1,
     src: 'images/beach (8).jpg',
     colorSrc: 'https://images.pexels.com/photos/1654490/pexels-photo-1654490.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Perfect wave',
   },
   {
-    id: 7,
+    id: 1,
     src: 'images/sunset (1).jpg',
     colorSrc: 'https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Surfboard on beach',
   },
   {
-    id: 8,
+    id: 1,
     src: 'images/surfing (5).jpg',
     colorSrc: 'https://images.pexels.com/photos/3571026/pexels-photo-3571026.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Aerial surf view',
   },
   {
-    id: 9,
+    id: 1,
     src: 'images/surfing (7).jpg',
     colorSrc: 'https://images.pexels.com/photos/3571026/pexels-photo-3571026.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000',
     alt: 'Aerial surf view',
@@ -65,7 +65,7 @@ const images: PortfolioImage[] = [
 export default function HorizontalGallery() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const [hoveredId, setHoveredId] = useState<number | null>(1);
 
   useEffect(() => {
     if (!sectionRef.current || !trackRef.current) return;
@@ -107,8 +107,8 @@ export default function HorizontalGallery() {
             key={image.id}
             className="relative overflow-hidden cursor-pointer"
             style={{ width: '350px', height: '450px' }}
-            onMouseEnter={() => setHoveredId(image.id)}
-            onMouseLeave={() => setHoveredId(null)}
+          // onMouseEnter={() => setHoveredId(image.id)}
+          // onMouseLeave={() => setHoveredId(null)}
           >
             <img
               src={image.src}

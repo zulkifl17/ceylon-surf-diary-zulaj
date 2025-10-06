@@ -15,7 +15,7 @@ const stories: SurfStory[] = [
     location: 'Weligama Bay, 5:47 AM',
   },
   {
-    id: 2,
+    id: 1,
     image: 'images/surfing (10).jpg',
     colorImage: 'images/surfing (10).jpg',
     title: 'INSIDE THE BARREL',
@@ -23,7 +23,7 @@ const stories: SurfStory[] = [
     location: 'Mirissa Point, High Tide',
   },
   {
-    id: 3,
+    id: 1,
     image: 'images/lifestyle (12).jpg',
     colorImage: 'https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'THE GROM',
@@ -31,7 +31,7 @@ const stories: SurfStory[] = [
     location: 'Weligama Beach, Training Session',
   },
   {
-    id: 4,
+    id: 1,
     image: 'images/lifestyle (8).jpg',
     colorImage: 'https://images.pexels.com/photos/1654489/pexels-photo-1654489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'AFTER THE STORM',
@@ -42,7 +42,7 @@ const stories: SurfStory[] = [
 
 function StoryCard({ story, index }: { story: SurfStory; index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(true);
   const isReverse = index % 2 === 1;
 
   useEffect(() => {
@@ -78,7 +78,7 @@ function StoryCard({ story, index }: { story: SurfStory; index: number }) {
         className={`relative h-[50vh] lg:h-screen overflow-hidden cursor-pointer ${ isReverse ? 'lg:order-2' : ''
           }`}
         onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        onMouseLeave={() => setIsHovered(true)}
       >
         <img
           src={story.image}
